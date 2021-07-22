@@ -10,6 +10,12 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
+              scr='images/d3.jpg'
+              text='Covid-19 Data Visualization'
+              label='D3'
+              path='https://covid19datavisualization-bzhang37.netlify.app/'
+            />
+            <CardItem
               src='images/akane.jpg'
               text='A blog website built with python django'
               label='Python'
