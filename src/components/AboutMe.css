@@ -1,0 +1,98 @@
+
+.about__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("/images/myphoto.jpg") center center;
+  background: linear-gradient(to right, rgba(75, 75, 75, 0.9), rgba(104, 104, 104, 0.3)), url("/images/myphoto.jpg") center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+  
+.about__bio-image p {
+  margin-bottom: 2rem;
+}
+
+.about__bio {
+  width: 80%;
+  text-align: center;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: 'KoHo', sans-serif;
+}
+
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+  font-family: 'Pattaya', sans-serif;
+}
+.about__bio p {
+  font-family: 'KoHo', sans-serif;
+}
+
+
+.jobs {
+  width: 60vw;
+  margin: 2rem auto 2rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  75% {
+    opacity: 0.5;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.jobs__job {
+  position: relative;
+  background: #f0f0f0af;
+  padding: 0.5rem;
+  animation: fadeIn 1s linear;
+  animation-fill-mode: both;
+}
+.jobs__job:nth-child(1) {
+  animation-delay: .3s;
+}
+
+.jobs__job:nth-child(2) {
+  animation-delay: .5s;
+}
+.jobs__job:nth-child(3) {
+  animation-delay: .75s;
+}
+
+.jobs__job h2, .about .jobs__job h3 {
+  margin: 0.3rem 0;
+}
+
+.jobs__job h4 {
+  margin: 0.3rem 0;
+}
+.jobs__job ul {
+  margin-right: 10px;
+}
+
+.jobs__job li {
+  position: relative;
+  left: 20px;  
+}
